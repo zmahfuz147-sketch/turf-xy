@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#041b2a">
+  <meta name="description" content="XY Turf Zone — an immersive underwater-inspired football turf experience. Explore facilities, rates and book your next match.">
+  <title>XY TURF ZONE — Play Beyond the Surface</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="home-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="water-particles" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="XY Turf Zone home">
+      <span class="brand-mark"><span class="brand-ball">✦</span></span>
+      <span class="brand-name">XY <b>TURF</b><i>ZONE</i><small>PLAY BEYOND THE SURFACE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#home" data-i18n="navHome">Home</a>
+      <a href="#about" data-i18n="navAbout">Our story</a>
+      <a href="#facilities" data-i18n="navFacilities">Facilities</a>
+      <a href="#pricing" data-i18n="navPricing">Pricing</a>
+      <a href="#reviews" data-i18n="navReviews">Reviews</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-switch" type="button" data-language-toggle aria-label="Switch language"><span class="language-dot"></span><span data-language-label>বাংলা</span></button>
+      <a class="button button-small button-glass" href="booking.html"><span data-i18n="navBook">Book a slot</span><span class="arrow">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-pulse"></span><span data-i18n="heroEyebrow">A NEW DEPTH OF THE GAME</span></div>
+        <h1 data-i18n="heroTitle">Dive into<br><em>the beautiful</em><br>game.</h1>
+        <p class="hero-lede" data-i18n="heroText">Where the energy of football meets the calm of the deep blue. A premium turf experience, made for your next great match.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="booking.html"><span data-i18n="heroCta">Find your kick-off</span><span class="button-icon">↗</span></a>
+          <a class="text-link" href="#about"><span class="play-icon">▶</span><span data-i18n="heroExplore">Explore the zone</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-item"><strong>01</strong><span data-i18n="proofOne">Premium turf</span></div>
+          <div class="proof-item"><strong>24/7</strong><span data-i18n="proofTwo">Under lights</span></div>
+          <div class="proof-item"><strong>5-a-side</strong><span data-i18n="proofThree">Made for teams</span></div>
+        </div>
+      </div>
+      <aside class="quick-book glass-panel">
+        <div class="panel-heading"><div><span class="mini-kicker" data-i18n="quickKicker">MAKE A SPLASH</span><h2 data-i18n="quickTitle">Book your slot</h2></div><span class="panel-icon">⌁</span></div>
+        <label class="field-label" for="quick-date" data-i18n="dateLabel">Choose a date</label>
+        <div class="select-wrap"><span class="field-icon">▦</span><input id="quick-date" type="date" aria-label="Choose a date"></div>
+        <div class="field-label time-label" data-i18n="timeLabel">Pick your kick-off</div>
+        <div class="quick-times" role="group" aria-label="Popular time slots">
+          <button type="button" class="time-chip" data-quick-time="07:00">7–8 AM</button>
+          <button type="button" class="time-chip" data-quick-time="17:00">5–6 PM</button>
+          <button type="button" class="time-chip selected" data-quick-time="19:00">7–8 PM</button>
+        </div>
+        <a class="button button-primary button-full" id="quick-book-link" href="booking.html"><span data-i18n="quickButton">See available slots</span><span class="button-icon">→</span></a>
+        <p class="panel-note"><span class="check-mark">✓</span><span data-i18n="quickNote">Instant demo booking · No payment needed</span></p>
+      </aside>
+      <div class="hero-caption"><span class="caption-line"></span><span data-i18n="heroCaption">36° 06' N · 115° 10' W — A DIFFERENT KIND OF PLAYGROUND</span></div>
+      <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="marquee-strip" aria-label="Brand promise"><div class="marquee-track"><span>PLAY DEEPER</span><b>✳</b><span>FEEL THE FLOW</span><b>✳</b><span>OWN THE MOMENT</span><b>✳</b><span>PLAY DEEPER</span><b>✳</b><span>FEEL THE FLOW</span><b>✳</b><span>OWN THE MOMENT</span><b>✳</b></div></section>
+
+    <section class="section section-wrap intro-section" id="about">
+      <div class="section-kicker"><span>01 / <span data-i18n="aboutKicker">THE XY EXPERIENCE</span></span><i></i></div>
+      <div class="intro-grid">
+        <div class="intro-visual">
+          <div class="visual-frame">
+            <div class="visual-topline"><span>XY / FIELD Nº 01</span><span class="live-dot">● LIVE TURF</span></div>
+            <div class="mini-pitch"><div class="pitch-midline"></div><div class="pitch-circle"></div><div class="mini-goal"></div><div class="pitch-glow"></div></div>
+            <div class="visual-bottomline"><span>THE DEEP BLUE ARENA</span><span>EST. 2026</span></div>
+          </div>
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><span class="visual-spark spark-a"></span><span class="visual-spark spark-b"></span>
+        </div>
+        <div class="intro-copy">
+          <p class="overline" data-i18n="aboutOverline">NOT JUST A TURF. A WHOLE NEW WORLD.</p>
+          <h2 data-i18n="aboutTitle">A little deeper.<br><em>A lot more game.</em></h2>
+          <p data-i18n="aboutText">At XY Turf Zone, we bring the thrill of the pitch into an atmosphere unlike anywhere else. Think pristine playing surface, thoughtful facilities and a deep-ocean mood that makes every match feel like an event.</p>
+          <div class="intro-points">
+            <div><span class="point-icon">✧</span><p><b data-i18n="aboutPoint1Title">Game-ready surface</b><small data-i18n="aboutPoint1Text">Comfortable, even and made for fast play.</small></p></div>
+            <div><span class="point-icon">◉</span><p><b data-i18n="aboutPoint2Title">Atmosphere after dark</b><small data-i18n="aboutPoint2Text">Beautiful lighting for late kick-offs.</small></p></div>
+            <div><span class="point-icon">⌁</span><p><b data-i18n="aboutPoint3Title">Space to reset</b><small data-i18n="aboutPoint3Text">Changing and shower facilities on site.</small></p></div>
+          </div>
+          <a class="underlined-link" href="#facilities"><span data-i18n="aboutLink">Discover the facilities</span><span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facilities-section" id="facilities">
+      <div class="section-wrap">
+        <div class="section-kicker"><span>02 / <span data-i18n="facilitiesKicker">BUILT FOR THE BEAUTIFUL GAME</span></span><i></i></div>
+        <div class="section-heading-row"><div><p class="overline" data-i18n="facilitiesOverline">EVERY DETAIL, CONSIDERED</p><h2 data-i18n="facilitiesTitle">The essentials.<br><em>Elevated.</em></h2></div><p class="section-description" data-i18n="facilitiesText">Everything your team needs before, during and after the final whistle. No distractions — just more time for the game.</p></div>
+        <div class="facility-grid">
+          <article class="facility-card facility-feature"><span class="facility-number">01</span><div class="facility-symbol symbol-turf">⌗</div><h3 data-i18n="facility1Title">Premium turf</h3><p data-i18n="facility1Text">A consistent, cushioned playing surface for confident footwork and quick passes.</p><span class="facility-tag" data-i18n="facility1Tag">THE MAIN EVENT</span></article>
+          <article class="facility-card"><span class="facility-number">02</span><div class="facility-symbol">♧</div><h3 data-i18n="facility2Title">Changing rooms</h3><p data-i18n="facility2Text">Freshen up, get ready and get back to your day with ease.</p><span class="facility-tag" data-i18n="facility2Tag">GET READY</span></article>
+          <article class="facility-card"><span class="facility-number">03</span><div class="facility-symbol">≋</div><h3 data-i18n="facility3Title">Shower facilities</h3><p data-i18n="facility3Text">A refreshing reset after every hard-fought match.</p><span class="facility-tag" data-i18n="facility3Tag">RESET MODE</span></article>
+          <article class="facility-card"><span class="facility-number">04</span><div class="facility-symbol">☼</div><h3 data-i18n="facility4Title">Floodlit play</h3><p data-i18n="facility4Text">Keep the game going with a clear, bright evening pitch.</p><span class="facility-tag" data-i18n="facility4Tag">AFTER HOURS</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="section-wrap pricing-wrap">
+        <div class="section-kicker"><span>03 / <span data-i18n="pricingKicker">SIMPLE, CLEAR RATES</span></span><i></i></div>
+        <div class="pricing-layout"><div class="pricing-intro"><p class="overline" data-i18n="pricingOverline">MORE GAME. NO GUESSWORK.</p><h2 data-i18n="pricingTitle">Pick your<br><em>perfect hour.</em></h2><p data-i18n="pricingText">Same great pitch, whichever side of sunset you choose. Bring your squad and make the hour count.</p><a class="underlined-link" href="booking.html"><span data-i18n="pricingLink">Check live availability</span><span>↗</span></a></div>
+          <div class="price-cards">
+            <article class="price-card"><div class="price-card-top"><span class="sun-icon">☼</span><span class="price-label" data-i18n="dayLabel">DAY SESSION</span></div><h3>৳ 2,000 <small>/ <span data-i18n="hour">hour</span></small></h3><p data-i18n="dayHours">6:00 AM – 6:00 PM</p><div class="price-rule"></div><span class="price-meta" data-i18n="dayMeta">Bright days. Big energy.</span></article>
+            <article class="price-card price-card-featured"><div class="popular-badge" data-i18n="popular">PLAYER FAVOURITE</div><div class="price-card-top"><span class="moon-icon">☾</span><span class="price-label" data-i18n="nightLabel">NIGHT SESSION</span></div><h3>৳ 2,400 <small>/ <span data-i18n="hour">hour</span></small></h3><p data-i18n="nightHours">6:00 PM – 4:00 AM</p><div class="price-rule"></div><span class="price-meta" data-i18n="nightMeta">Under lights. In your element.</span></article>
+          </div>
+        </div>
+        <p class="pricing-footnote"><span>ⓘ</span><span data-i18n="pricingNote">Sample rates for this demo website. Final pricing can be updated by the turf owner.</span></p>
+      </div>
+    </section>
+
+    <section class="section review-section" id="reviews">
+      <div class="section-wrap">
+        <div class="section-kicker"><span>04 / <span data-i18n="reviewsKicker">THE WORD FROM THE PITCH</span></span><i></i></div>
+        <div class="review-heading"><div><p class="overline" data-i18n="reviewsOverline">GOOD GAMES TRAVEL</p><h2 data-i18n="reviewsTitle">The vibe speaks<br><em>for itself.</em></h2></div><div class="review-controls"><button class="review-arrow" type="button" data-review-prev aria-label="Previous review">←</button><button class="review-arrow" type="button" data-review-next aria-label="Next review">→</button></div></div>
+        <div class="review-viewport"><div class="review-track" data-review-track>
+          <article class="review-card"><div class="review-stars">★★★★★</div><blockquote data-i18n="review1">“Great surface, incredible atmosphere. Our weekly match just got an upgrade.”</blockquote><div class="review-person"><span class="review-avatar">RH</span><span><b>Rafi Hasan</b><small data-i18n="reviewRole">Regular player</small></span></div></article>
+          <article class="review-card"><div class="review-stars">★★★★★</div><blockquote data-i18n="review2">“Easy booking, friendly setup and the night lighting is on another level.”</blockquote><div class="review-person"><span class="review-avatar avatar-two">TA</span><span><b>Tanvir Ahmed</b><small data-i18n="reviewRole">Team captain</small></span></div></article>
+          <article class="review-card"><div class="review-stars">★★★★★</div><blockquote data-i18n="review3">“A proper place to play. Clean facilities and a pitch that feels brilliant.”</blockquote><div class="review-person"><span class="review-avatar avatar-three">SI</span><span><b>Saif Islam</b><small data-i18n="reviewRole">Weekend player</small></span></div></article>
+        </div></div>
+        <div class="review-dots" aria-label="Review slider pagination"><button class="active" data-review-dot="0" aria-label="Show review 1"></button><button data-review-dot="1" aria-label="Show review 2"></button><button data-review-dot="2" aria-label="Show review 3"></button></div>
+      </div>
+    </section>
+
+    <section class="final-cta section-wrap">
+      <div class="cta-orb" aria-hidden="true"></div><div class="cta-content"><p class="overline" data-i18n="ctaOverline">YOUR NEXT MATCH IS CALLING</p><h2 data-i18n="ctaTitle">Ready to make<br><em>waves?</em></h2><p data-i18n="ctaText">Pick a date. Gather your team. We'll see you under the lights.</p><a class="button button-primary" href="booking.html"><span data-i18n="ctaButton">Book your pitch</span><span class="button-icon">↗</span></a></div><div class="cta-coordinate">XY / TURF ZONE<br><span>PLAY BEYOND THE SURFACE</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><span class="brand-ball">✦</span></span><span class="brand-name">XY <b>TURF</b><i>ZONE</i><small>PLAY BEYOND THE SURFACE</small></span></a><p data-i18n="footerTagline">Where every match finds its depth.</p></div><div class="footer-col"><b data-i18n="footerExplore">EXPLORE</b><a href="#about" data-i18n="navAbout">Our story</a><a href="#facilities" data-i18n="navFacilities">Facilities</a><a href="#pricing" data-i18n="navPricing">Pricing</a></div><div class="footer-col"><b data-i18n="footerVisit">FIND THE ZONE</b><span>123 Football Lane, Dhaka</span><span>+880 1XXX-XXX-XXX</span><span>hello@xyturfzone.com</span></div><div class="footer-book"><p data-i18n="footerReady">Have a game in mind?</p><a class="underlined-link" href="booking.html"><span data-i18n="footerBook">Let's get you on the pitch</span><span>↗</span></a></div></div><div class="section-wrap footer-bottom"><span>© 2026 XY TURF ZONE. <span data-i18n="copyright">All rights reserved.</span></span><span>DESIGNED FOR THE LOVE OF THE GAME <b>✳</b></span></div></footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="sea" x1="800" y1="0" x2="800" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#061d34"/><stop offset=".48" stop-color="#073951"/><stop offset="1" stop-color="#031722"/></linearGradient>
+    <linearGradient id="water" x1="800" y1="80" x2="800" y2="730" gradientUnits="userSpaceOnUse"><stop stop-color="#11b8d5" stop-opacity=".02"/><stop offset=".6" stop-color="#18d4e8" stop-opacity=".18"/><stop offset="1" stop-color="#42f0dc" stop-opacity=".03"/></linearGradient>
+    <linearGradient id="grass" x1="800" y1="430" x2="800" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#1b927b"/><stop offset=".4" stop-color="#07564f"/><stop offset="1" stop-color="#032c35"/></linearGradient>
+    <linearGradient id="grass2" x1="0" y1="540" x2="1600" y2="980" gradientUnits="userSpaceOnUse"><stop stop-color="#44d9b0" stop-opacity=".2"/><stop offset=".5" stop-color="#0c544a" stop-opacity="0"/><stop offset="1" stop-color="#50e4d2" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e0ffff" stop-opacity=".55"/><stop offset="1" stop-color="#46e7ff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#54edff" stop-opacity=".6"/><stop offset="1" stop-color="#54edff" stop-opacity="0"/></radialGradient>
+    <filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur7"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="shadow"><feGaussianBlur stdDeviation="8"/></filter>
+    <pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#9df8f2" opacity=".2"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sea)"/>
+  <ellipse cx="810" cy="260" rx="600" ry="360" fill="url(#glow)" opacity=".36" filter="url(#blur20)"/>
+  <!-- submerged surface and shafts of light -->
+  <path d="M0 80C270 20 425 115 640 63s410-69 960 10v135H0V80Z" fill="#0c344a" opacity=".58"/>
+  <path d="M180 0 470 0 760 720 520 720Z" fill="url(#beam)" opacity=".55"/>
+  <path d="M680 0 840 0 1010 640 840 640Z" fill="url(#beam)" opacity=".4"/>
+  <path d="M1160 0 1350 0 1190 700 1030 700Z" fill="url(#beam)" opacity=".35"/>
+  <path d="M0 0h1600v1000H0z" fill="url(#water)"/>
+  <!-- distant rocky silhouettes -->
+  <path d="M0 365 70 324l38-42 36 16 46-47 42 24 43-33 45 48 39-4 34 51 50-8 47 37 65-18 53 27 70-25 55 20 63-30 50 34 64-26 45 16 49-35 53 24 49-25 47 29 62-10 47 36 54-22 38 30 75-10 46 37 44-31 59 32 55-32 45 43 65-12v195H0V365Z" fill="#041b29" opacity=".94"/>
+  <path d="M0 405 120 368l60 38 70-46 60 37 60-13 65 39 80-28 60 37 75-22 60 32 78-36 64 37 62-29 65 32 60-20 68 33 78-21 62 36 75-25 70 30 73-29 69 27v145H0V405Z" fill="#082c3b" opacity=".86"/>
+  <!-- underwater arena stands -->
+  <path d="M0 430Q800 340 1600 430v270H0V430Z" fill="#082d39" opacity=".8"/>
+  <path d="M0 480Q800 390 1600 480" stroke="#45bed0" stroke-opacity=".24" stroke-width="3"/>
+  <path d="M0 518Q800 430 1600 518" stroke="#8df8e8" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M0 555Q800 468 1600 555" stroke="#8df8e8" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M0 594Q800 506 1600 594" stroke="#8df8e8" stroke-opacity=".1" stroke-width="2"/>
+  <path d="M0 435Q800 350 1600 435v260Q800 600 0 695V435Z" fill="url(#dots)" opacity=".55"/>
+  <!-- floodlights -->
+  <g opacity=".95">
+    <path d="M300 248v230M1302 208v278" stroke="#a4e9ed" stroke-opacity=".45" stroke-width="5"/>
+    <path d="M280 248h40M1280 208h45" stroke="#a4e9ed" stroke-opacity=".65" stroke-width="5"/>
+    <rect x="258" y="220" width="84" height="35" rx="8" fill="#d6ffff" opacity=".72" filter="url(#blur7)"/>
+    <rect x="1262" y="180" width="86" height="38" rx="8" fill="#d6ffff" opacity=".75" filter="url(#blur7)"/>
+    <g fill="#e9ffff"><circle cx="270" cy="236" r="5"/><circle cx="290" cy="232" r="5"/><circle cx="310" cy="232" r="5"/><circle cx="330" cy="236" r="5"/><circle cx="1276" cy="194" r="5"/><circle cx="1297" cy="190" r="5"/><circle cx="1318" cy="190" r="5"/><circle cx="1338" cy="195" r="5"/></g>
+    <ellipse cx="300" cy="300" rx="170" ry="170" fill="url(#glow)" opacity=".27"/>
+    <ellipse cx="1304" cy="285" rx="190" ry="175" fill="url(#glow)" opacity=".27"/>
+  </g>
+  <!-- field plane -->
+  <path d="M0 625 800 470l800 155v375H0V625Z" fill="url(#grass)"/>
+  <path d="M0 625 800 470l800 155v375H0V625Z" fill="url(#grass2)"/>
+  <path d="M0 625 800 470l800 155" stroke="#a1fff0" stroke-opacity=".36" stroke-width="4"/>
+  <!-- mowing stripes -->
+  <path d="M0 660 800 504l800 156v93L0 758V660Z" fill="#20a88d" opacity=".11"/>
+  <path d="M0 785 800 628l800 157v95L0 880v-95Z" fill="#9df5d9" opacity=".055"/>
+  <path d="M0 900 800 742l800 158v100H0V900Z" fill="#001f2a" opacity=".28"/>
+  <!-- pitch markings perspective -->
+  <g stroke="#b6fff0" stroke-opacity=".74" stroke-width="4" fill="none">
+    <path d="M0 625 800 470 1600 625" opacity=".42"/>
+    <path d="M800 470v530" opacity=".25"/>
+    <path d="M0 811Q800 620 1600 811"/>
+    <path d="M380 1000Q390 758 800 676Q1210 758 1220 1000"/>
+    <ellipse cx="800" cy="806" rx="148" ry="62" transform="rotate(0 800 806)"/>
+    <path d="M500 1000V884q0-76 88-95h424q88 19 88 95v116" opacity=".6"/>
+    <path d="M610 1000V921q0-46 58-58h264q58 12 58 58v79" opacity=".34"/>
+  </g>
+  <!-- goal frame -->
+  <g stroke="#e1ffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".88">
+    <path d="M692 553v-95h216v95M692 458l-18 15v96M908 458l18 15v96" fill="#052f3d" fill-opacity=".22"/>
+    <path d="M692 458 674 473l216 0 18-15M674 473v96l234-16v-95" stroke-width="2.5" opacity=".55"/>
+    <path d="M728 458v92M764 458v89M800 458v87M836 458v84M872 458v81M692 482h216M692 506h216M692 530h216" stroke-width="1.4" opacity=".35"/>
+  </g>
+  <!-- ball silhouette / bubbles -->
+  <g opacity=".72"><circle cx="1180" cy="745" r="27" fill="#051b2a" stroke="#77e9dc" stroke-width="2"/><path d="m1180 720 15 11-6 18h-18l-6-18 15-11Zm-24 26 12 3 3 18-15 3-8-14 8-10Zm48 0-12 3-3 18 15 3 8-14-8-10Z" fill="#b6fff0" fill-opacity=".55"/></g>
+  <g fill="#83f7f0" opacity=".5"><circle cx="210" cy="520" r="3"/><circle cx="235" cy="485" r="2"/><circle cx="1380" cy="500" r="3"/><circle cx="1430" cy="570" r="2"/><circle cx="1060" cy="360" r="2"/><circle cx="570" cy="300" r="2.5"/><circle cx="980" cy="270" r="2"/><circle cx="720" cy="390" r="3"/></g>
+  <!-- edge kelp -->
+  <g stroke="#0d806f" stroke-width="13" stroke-linecap="round" opacity=".62">
+    <path d="M16 850q50-105 0-235m0 235q85-76 75-206m-75 206q-7-135-58-190M1565 1000q-18-150 45-255m-45 255q-75-135-38-236m38 236q-5-168 90-220"/>
+  </g>
+  <g stroke="#2bd6b7" stroke-width="4" stroke-linecap="round" opacity=".35"><path d="M60 900q-18-104 8-180M85 885q42-86 20-150M1535 930q-42-80-25-148M1580 890q42-74 14-145"/></g>
+  <rect width="1600" height="1000" fill="#001521" opacity=".16"/>
+</svg>

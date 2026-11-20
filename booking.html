@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#041b2a">
+  <meta name="description" content="Choose a date and time for your next match at XY Turf Zone.">
+  <title>Book a Slot — XY TURF ZONE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body class="booking-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="water-particles" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="XY Turf Zone home"><span class="brand-mark"><span class="brand-ball">✦</span></span><span class="brand-name">XY <b>TURF</b><i>ZONE</i><small>PLAY BEYOND THE SURFACE</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html" data-i18n="navHome">Home</a><a href="index.html#about" data-i18n="navAbout">Our story</a><a href="index.html#facilities" data-i18n="navFacilities">Facilities</a><a href="index.html#pricing" data-i18n="navPricing">Pricing</a></nav>
+    <div class="header-actions"><button class="language-switch" type="button" data-language-toggle aria-label="Switch language"><span class="language-dot"></span><span data-language-label>বাংলা</span></button><a class="button button-small button-glass" href="index.html"><span data-i18n="backHome">Back to home</span><span class="arrow">↗</span></a></div>
+  </header>
+
+  <main class="booking-main section-wrap">
+    <div class="booking-hero"><div class="section-kicker"><span>XY / <span data-i18n="bookingKicker">FIELD RESERVATION</span></span><i></i></div><div class="booking-title-row"><div><p class="overline" data-i18n="bookingOverline">YOUR TIME. YOUR TEAM. YOUR TURF.</p><h1 data-i18n="bookingTitle">Choose your<br><em>moment to play.</em></h1></div><div class="booking-hero-note"><span class="note-orbit">⌁</span><p data-i18n="bookingSub">A few taps between you and kick-off. Pick a day, find your time and we'll save your spot.</p></div></div></div>
+
+    <div class="booking-layout">
+      <section class="booking-picker glass-panel" aria-label="Choose your date and time">
+        <div class="step-heading"><span class="step-number">01</span><div><h2 data-i18n="stepDate">Choose a date</h2><p data-i18n="stepDateSub">Find a day that works for your squad.</p></div><span class="step-complete">01 / 03</span></div>
+        <div class="date-strip" data-date-strip aria-label="Available dates"></div>
+        <div class="calendar-note"><span>ⓘ</span><span data-i18n="dateNote">Showing the next 7 days. Availability is sample data.</span></div>
+        <div class="booking-divider"></div>
+        <div class="step-heading step-heading-time"><span class="step-number">02</span><div><h2 data-i18n="stepTime">Choose a session</h2><p data-i18n="stepTimeSub">Daylight or deep-blue evenings?</p></div><span class="step-complete">02 / 03</span></div>
+        <div class="session-switch" role="group" aria-label="Choose day or night session"><button class="session-option active" type="button" data-session="day"><span class="session-symbol">☼</span><span><b data-i18n="dayLabel">DAY SESSION</b><small>6 AM — 6 PM</small></span><span class="session-radio"></span></button><button class="session-option" type="button" data-session="night"><span class="session-symbol moon-session">☾</span><span><b data-i18n="nightLabel">NIGHT SESSION</b><small>6 PM — 4 AM</small></span><span class="session-radio"></span></button></div>
+        <div class="slot-header"><div><h3 data-i18n="slotHeading">Available kick-off times</h3><p data-i18n="slotSub">Choose one 60-minute slot.</p></div><span class="slot-count" data-slot-count>—</span></div>
+        <div class="slot-grid" data-slot-grid></div>
+        <div class="slot-legend"><span><i class="legend-dot available"></i><span data-i18n="legendAvailable">Available</span></span><span><i class="legend-dot selected"></i><span data-i18n="legendSelected">Selected</span></span><span><i class="legend-dot booked"></i><span data-i18n="legendBooked">Booked</span></span></div>
+        <div class="booking-divider"></div>
+        <div class="step-heading step-heading-details"><span class="step-number">03</span><div><h2 data-i18n="stepDetails">Your details</h2><p data-i18n="stepDetailsSub">Who should we keep the pitch for?</p></div><span class="step-complete">03 / 03</span></div>
+        <form class="guest-form" data-booking-form novalidate>
+          <label><span data-i18n="nameLabel">Your name</span><input name="name" type="text" placeholder="e.g. Rafi Hasan" required autocomplete="name"></label>
+          <label><span data-i18n="phoneLabel">Mobile number</span><input name="phone" type="tel" placeholder="01XXXXXXXXX" required inputmode="tel" autocomplete="tel"></label>
+          <label class="full-field"><span data-i18n="teamLabel">Team / group name <small>(optional)</small></span><input name="team" type="text" placeholder="e.g. Friday Night FC"></label>
+          <p class="form-hint full-field"><span>ⓘ</span><span data-i18n="formHint">Demo only: your details stay in this browser and are not sent to a server.</span></p>
+          <button class="button button-primary button-full mobile-submit" type="submit"><span data-i18n="confirmButton">Confirm demo booking</span><span class="button-icon">↗</span></button>
+        </form>
+      </section>
+
+      <aside class="booking-summary glass-panel">
+        <div class="summary-heading"><div><span class="mini-kicker" data-i18n="summaryKicker">YOUR MATCH PLAN</span><h2 data-i18n="summaryTitle">Booking summary</h2></div><span class="summary-mark">XY<span>.</span></span></div>
+        <div class="summary-field"><span data-i18n="summaryVenue">VENUE</span><b>XY Turf Zone</b><small data-i18n="summaryAddress">123 Football Lane, Dhaka</small></div>
+        <div class="summary-field"><span data-i18n="summaryDate">DATE</span><b data-summary-date>Choose a date</b></div>
+        <div class="summary-field"><span data-i18n="summaryTime">KICK-OFF</span><b data-summary-time>Choose a time</b></div>
+        <div class="summary-field"><span data-i18n="summarySession">SESSION</span><b data-summary-session>Day session</b></div>
+        <div class="summary-price"><span data-i18n="summaryRate">Hourly rate</span><b data-summary-price>৳ 2,000 <small>/ hour</small></b></div>
+        <div class="summary-total"><span data-i18n="estimatedTotal">ESTIMATED TOTAL</span><b data-summary-total>৳ 2,000</b></div>
+        <button class="button button-primary button-full summary-submit" type="button" data-summary-submit><span data-i18n="confirmButton">Confirm demo booking</span><span class="button-icon">↗</span></button>
+        <p class="summary-foot"><span class="shield-icon">◈</span><span data-i18n="summaryNote">No payment required. This is a sample booking flow, not a live reservation.</span></p>
+        <div class="summary-bottom"><span>XY / 01</span><span>PLAY BEYOND THE SURFACE</span></div>
+      </aside>
+    </div>
+    <div class="booking-help"><span class="help-icon">?</span><p><b data-i18n="helpTitle">Need a hand?</b><span data-i18n="helpText">For this demo, bookings are not sent to a real turf. Contact details can be connected later.</span></p><a href="index.html#pricing" data-i18n="helpLink">View rates ↗</a></div>
+  </main>
+
+  <footer class="site-footer booking-footer"><div class="section-wrap footer-bottom"><span>© 2026 XY TURF ZONE. <span data-i18n="copyright">All rights reserved.</span></span><span>DESIGNED FOR THE LOVE OF THE GAME <b>✳</b></span></div></footer>
+  <div class="toast" role="status" aria-live="polite" data-toast><span class="toast-icon">✓</span><span data-toast-message>Demo booking confirmed.</span><button type="button" data-toast-close aria-label="Dismiss">×</button></div>
+  <div class="confirmation-modal" data-confirmation-modal aria-hidden="true"><div class="confirmation-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="confirmation-title"><button class="modal-close" type="button" data-modal-close aria-label="Close">×</button><span class="confirmation-check">✓</span><p class="mini-kicker" data-i18n="modalKicker">YOU'RE ON THE LIST</p><h2 id="confirmation-title" data-i18n="modalTitle">Match plan<br><em>locked in.</em></h2><p data-i18n="modalText">This is a demo confirmation. No real reservation has been created.</p><div class="modal-booking-info" data-modal-info></div><button class="button button-primary button-full" type="button" data-modal-close><span data-i18n="modalDone">Back to the zone</span><span class="button-icon">↗</span></button></div></div>
+</body>
+</html>
